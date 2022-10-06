@@ -100,9 +100,10 @@
                     </table>
                     
                 </div>
-                    
+                   <input type="button" value = "click" onclick = "saludar()">
                 </div>
             </div>
         </div>
+        <script src  = "javascript.js"></script>
 </body>
 </html>
