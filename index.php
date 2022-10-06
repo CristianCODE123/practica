@@ -14,19 +14,19 @@
 <div style ="margin-left:17em;">
 <div class="col-md-6" style ="display:flex;">
     <div>
-    <label for="inputState" class="form-label">State</label>
+    <label for="inputState" class="form-label">state</label>
     <select id="inputState" class="form-select" style ="width:200px">
       <option selected>Choose...</option>
       <option>...</option>
     </select>
     </div>
     <div style ="margin-left:10em;">
-    <label for="inputState" class="form-label">State</label>
-    <select class="form-select" aria-label="Default select example" style ="width:200px">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+    <label for="inputState" class="form-label">seleccionar</label>
+    <select class="form-select" onchange ="seleccionar();" id= "selector" style ="width:200px">
+  <option selected >Open this select menu</option>
+  <option value="1" name = "2"></option>
+  <option value="2" name = "3">Two</option>
+  <option value="3" name ="4">Three</option>
 </select>
     </div>
     
@@ -89,7 +89,7 @@
                            
                             <tr>
                                 <td scope="row"></td>
-                                <td>jkjk</td>
+                                <td id = "aqui">jkjk</td>
                                 <td>jkj</td>
                                 <td>jjk</td>
                                 <td>jkjk<a class="text-success" href="editar.php?codigo=<?php echo $dato->codigo; ?>"><i class="bi bi-pencil-square"></i></a></td>
@@ -105,5 +105,24 @@
             </div>
         </div>
         <script src  = "javascript.js"></script>
+
+        <script type  ="text/javascript">
+          function seleccionar(){
+            let seleccionado = document.getElementById("selector");
+          let opcion = seleccionado.value;
+          let espacio = document.getElementById('aqui');
+        
+          espacio.innerHTML = `<h1>usted ha seleccionado el valor ${opcion}</h1>`
+          if(opcion == 1){
+            espacio.innerHTML = `<form action="">
+          <input type="text" placeholder = "nombre">
+          <input type="text" placeholder  = "apellido">
+          <input type="button" value = "enviar">
+
+        </form>`;
+          }
+          }
+          
+        </script>
 </body>
 </html>
