@@ -11,20 +11,28 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
-<div class="col-md-6">
+<div style ="margin-left:17em;">
+<div class="col-md-6" style ="display:flex;">
+    <div>
     <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select" style ="width:60px">
+    <select id="inputState" class="form-select" style ="width:200px">
       <option selected>Choose...</option>
       <option>...</option>
     </select>
+    </div>
+    <div style ="margin-left:10em;">
     <label for="inputState" class="form-label">State</label>
-    <select class="form-select" aria-label="Default select example" style ="width:60px">
+    <select class="form-select" aria-label="Default select example" style ="width:200px">
   <option selected>Open this select menu</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select>
+    </div>
+    
   </div>
+</div>
+
 <div class="card" style = "width:1000px;margin-left:17em;margin-top:5em;">
                 <div class="card-header">
                     Formulario registros individuales
