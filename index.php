@@ -120,6 +120,15 @@
           <input type="button" value = "enviar">
 
         </form>`;
+          }else if(opcion == 2){
+            espacio.innerHTML = `<form>
+            <input type = "text" placeholder = "sdsd">
+            <input type = "text" placeholder = "fsfsfs">
+            </form>`
+          }else if(opcion == 3){
+            espacio.innerHTML = `<form>
+            <input type = "text" placeholder = "opcion 3 input">
+            </form>`
           }
           }
           
